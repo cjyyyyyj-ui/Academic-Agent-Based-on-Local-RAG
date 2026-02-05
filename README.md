@@ -5,6 +5,7 @@
 ## Usage Examples
 As shown in the figure, this is the visual operation interface for the final run, which is available via a local port provided by **Streamlit**.You can use this agent to search and download multiple papers, analyze the core points across different papers, and also analyze the content of the local knowledge base you have uploaded.
 ![image.png](https://tc-cdn.processon.com/po/658679616ff9af23035e9c84-698305ccaf380f3b56b27fb8)
+Papers after being downloaded will be placed in the .arxiv_downloaded_papers folder of the project.
 ## How to use the project ？
 ### First, you need to download the embedding models. Due to their large size (the two models take up about 5 GB in total), they cannot be uploaded to GitHub.
 After downloading the repository, you need to modify two parts of the code files separately. This project is a vector-based RAG of the Naive RAG type. Two different embedding models are used for content indexing in this project, namely the Chinese model BAAI/bge-large-zh-v1.5 and the English model BAAI/bge-large-en-v1.5, both released by BAAI. You need to download these models by yourself and place them in the corresponding embedding_model folder.
