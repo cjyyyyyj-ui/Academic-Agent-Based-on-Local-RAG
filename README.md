@@ -23,7 +23,8 @@ git clone https://huggingface.co/BAAI/bge-large-en ./bge-large-en
 ```
 ### Configure the content in the .env file
 
-![image.png](https://tc-cdn.processon.com/po/658679616ff9af23035e9c84-698315b8af380f3b56b28168)
+<img width="945" height="278" alt="image" src="https://github.com/user-attachments/assets/24bc888b-96a9-46fc-abe9-aa19e242da58" />
+
 This project uses DeepSeek V3.2 as the baseline version. You can obtain your own API key directly from DeepSeek and use it out of the box. Additionally, you can also integrate other large models that support the OpenAI API by using their respective API keys. If you need to switch to a model with a different reasoning mode, you will need to modify the structure output part in main.py by yourself.
 
 ### Install the dependencies
