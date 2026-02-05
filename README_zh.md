@@ -23,7 +23,8 @@ git clone https://huggingface.co/BAAI/bge-large-en ./bge-large-en
 ```
 ### 配置.env文件中的内容
 
-![图片.png](https://tc-cdn.processon.com/po/658679616ff9af23035e9c84-698315b8af380f3b56b28168)
+![Uploading image.png…]()
+
 本项目使用DeepSeek V3.2作为基线版本。您可以直接从 DeepSeek 获取自己的 API 密钥并开箱即用。此外，您还可以使用各自的 API 密钥集成支持 OpenAI API 的其他大型模型。如果需要切换到不同推理模式的模型，则需要自行修改main.py中的结构体输出部分。
 
 ### 安装依赖项
