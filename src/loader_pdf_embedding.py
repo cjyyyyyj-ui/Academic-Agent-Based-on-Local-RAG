@@ -4,6 +4,10 @@ from langchain_community.document_loaders import PyMuPDFLoader, TextLoader
 from .utils import get_resource_path
 import os
 import re
+from dotenv import load_dotenv
+
+env_path = get_resource_path(".env")
+load_dotenv(env_path)
 
 # 固定检测种子，提升langdetect结果的一致性（可选）
 DetectorFactory.seed = 0
@@ -105,7 +109,7 @@ def get_bge_embeddings(language):
     config = model_configs[language]
     embeddings = HuggingFaceBgeEmbeddings(
         model_name=config["model_name"],
-        model_kwargs={"device": "cpu"},  # 无GPU改cpu
+        model_kwargs={"device": os.getenv("EMBUDDING_DEVICE")},  # 无GPU改cpu
         encode_kwargs={"normalize_embeddings": True},
         query_instruction=config["query_instruction"]
     )

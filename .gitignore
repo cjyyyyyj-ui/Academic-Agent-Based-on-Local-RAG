@@ -1,0 +1,9 @@
+# 忽略敏感配置文件
+.env
+# 忽略PyCharm编辑器配置目录
+.idea/
+# 顺带保留之前的Python冗余文件忽略规则
+__pycache__/
+*.pyc
+*.pyo
+venv/
